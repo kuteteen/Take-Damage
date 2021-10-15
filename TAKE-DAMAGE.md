@@ -9,10 +9,7 @@ int (*Take_Damage)(void *instance);
 int TakeDamage(void *instance) {
     if(instance != NULL) {
         if (isTakeDemageBool) {
-        void *Match = Curent_Match();
-            if(Match != NULL) {
-               return 50;
-            }
+           return 50; //Input the damage you want the weapon to deal
         }
     }
     return Take_Damage(instance);
